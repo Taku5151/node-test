@@ -3,7 +3,7 @@ function login() {
   const password = document.getElementById("password").value;
   const expressString = `http://localhost:3000/login/${calcMD5(userName)}-${calcMD5(password)}`
   fetch(expressString, {
-    method: "GET"
+    method: "POST"
   }).then(function(response) {
     return response.json();
   }).then(function(data) {

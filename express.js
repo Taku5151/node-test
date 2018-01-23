@@ -7,7 +7,7 @@ app.get('/:name', function(req, res) {
     res.send(req.params.name)
 })
 
-app.get('/login/:username-:password', function(req, res) {
+app.post('/login/:username-:password', function(req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   res.json({login: req.params.username, password: req.params.password});
