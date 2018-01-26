@@ -19,11 +19,6 @@ app.get('/:name', function(req, res) {
 })
 
 app.post('/login/', function(req, res) {
-  console.log(1);
-  // res.header("Access-Control-Allow-Origin", "*");
-  // res.header("Access-Control-Allow-Methods", "*");
-  // res.header("Access-Control-Allow-Headers", "*");
-  console.log(JSON.stringify(req.body));
   res.json(req.body);
 })
 
